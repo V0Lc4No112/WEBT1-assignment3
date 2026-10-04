@@ -1,0 +1,59 @@
+.landings {
+  padding: 2.5rem 1rem;
+}
+
+.landings-inner {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.landings-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.landing-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.landing {
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+}
+
+.landing h3 {
+  font-size: 1.25rem;
+}
+
+.landing p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .landings-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .landing-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .landings {
+    padding: 4rem 2rem;
+  }
+
+  .landing-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
